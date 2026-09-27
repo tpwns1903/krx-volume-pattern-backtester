@@ -1,0 +1,20 @@
+# 환경변수 / 비밀 정보
+.env
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 가상환경
+.venv/
+venv/
+
+# OHLCV 캐시 (python run_pattern.py --refresh 로 재생성)
+data/cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

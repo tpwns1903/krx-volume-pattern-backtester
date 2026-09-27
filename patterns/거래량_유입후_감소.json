@@ -1,0 +1,39 @@
+{
+  "name": "거래량_유입후_감소",
+  "created_at": "2026-09-11",
+  "description_ko": "Phase1: 2일간 거래량이 MA20 대비 배수 이상으로 증가 (Day2 > Day1). Phase2: 이후 거래량 감소 추세 1~3일 지속. 신호일 = Phase2 마지막 날 (최대 Day5).",
+  "module": "src.patterns.volume_pattern",
+  "class": "VolumeInflowDeclinePattern",
+  "params": {
+    "ma_window": 20,
+    "multipliers": [
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "phase1_days": 2,
+    "phase2_min_days": 1,
+    "phase2_max_days": 3,
+    "forward_days": 5,
+    "min_volume": 1000
+  },
+  "forward_days": 5,
+  "last_run": "2026-09-11 14:14",
+  "last_result_summary": {
+    "total_signals": 17037,
+    "multipliers": [
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "csv": "C:\\Users\\tpwns\\OneDrive\\바탕 화면\\김세준\\프로젝트\\패턴\\data\\results\\거래량_유입후_감소_20260911_1412.csv",
+    "excel": "C:\\Users\\tpwns\\OneDrive\\바탕 화면\\김세준\\프로젝트\\패턴\\data\\results\\거래량_유입후_감소_20260911_1412.xlsx",
+    "charts": [
+      "C:\\Users\\tpwns\\OneDrive\\바탕 화면\\김세준\\프로젝트\\패턴\\data\\results\\거래량_유입후_감소_histogram_20260911_1414.png",
+      "C:\\Users\\tpwns\\OneDrive\\바탕 화면\\김세준\\프로젝트\\패턴\\data\\results\\거래량_유입후_감소_avg_return_bar_20260911_1414.png",
+      "C:\\Users\\tpwns\\OneDrive\\바탕 화면\\김세준\\프로젝트\\패턴\\data\\results\\거래량_유입후_감소_heatmap_20260911_1414.png"
+    ]
+  }
+}
